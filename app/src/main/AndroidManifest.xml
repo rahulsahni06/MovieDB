@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sahni.rahul.moviedb">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_movie_db"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_movie_db"
+        android:supportsRtl="true"
+        android:theme="@style/MyAppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MyAppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--<activity-->
+            <!--android:name=".activities.MovieDetailsActivity"-->
+            <!--android:theme="@style/MyAppTheme.NoActionBar.MovieDetails" />-->
+        <!--<activity-->
+            <!--android:name=".activities.TvDetailsActivity"-->
+            <!--android:theme="@style/MyAppTheme.NoActionBar.MovieDetails" />-->
+        <activity
+            android:name=".activities.TvDetailsActivity"
+            android:theme="@style/MyAppTheme.NoActionBar.MovieDetails" />
+        <activity android:name=".activities.AuthenticationActivity" />
+        <activity
+            android:name=".activities.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:theme="@style/MyAppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.PersonDetailsActivity"
+            android:label="@string/title_activity_person_details"
+            android:theme="@style/MyAppTheme.NoActionBar.MovieDetails" />
+        <activity
+            android:name=".activities.MovieDetailsActivity"
+            android:theme="@style/MyAppTheme.NoActionBar.MovieDetails"/>
+    </application>
+
+</manifest>

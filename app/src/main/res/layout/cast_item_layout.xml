@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginBottom="2dp"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:clickable="true">
+
+    <ImageView
+        android:background="@android:color/black"
+        android:scaleType="centerCrop"
+        android:id="@+id/person_image_view"
+        android:layout_width="100dp"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:textColor="?attr/colorPrimary"
+        android:text="Real name"
+
+        android:id="@+id/person_name_text_view"
+        android:layout_width="100dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:textColor="?attr/colorPrimary"
+        android:text="Name"
+        android:ellipsize="marquee"
+        android:maxLines="2"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:textSize="12sp"
+        android:id="@+id/cast_character_text_view"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"/>
+
+</LinearLayout>
